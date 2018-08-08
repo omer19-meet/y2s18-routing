@@ -5,6 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="">
 </head>
 <body>
-    <h1>This is the page for the student with id {{ student_id }}.</h1>
+    <h1>This is the page for the student {{ student.name}} , from the class of {{ student.year}}. The student has {{student.finish_lab}} </h1>
+    <a href="{{url_for('home') }}"> Home page</a>
 </body>
 </html>
